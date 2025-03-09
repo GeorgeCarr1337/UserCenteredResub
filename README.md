@@ -39,7 +39,6 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 ---
 
 ## 🛠️ Technologies Used  
-- **All fa code below is adapted from W3C** https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
 - **HTML5** – Markup for structuring the website.  
 - **CSS3** – Styling with modern font usage and hover effects.  
 - **Responsive Design** – Mobile-friendly layout using **flexbox** and **media queries**.
