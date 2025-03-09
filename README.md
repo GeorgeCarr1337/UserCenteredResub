@@ -58,11 +58,11 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 ---
 
 ## 🔗 References & Attributions  
-
+- **[FA code based on  W3C ]([https://css-tricks.com/snippets/css/a-guide-to-flexbox/])** 
 - **[HTML & CSS Guidelines - W3C](https://www.w3.org/)** – Ensured web accessibility and semantic structure.  
 - **[Responsive Web Design - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)** – Implemented best practices for responsiveness.  
 - **[CSS Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)** – Used flexbox for layout alignment.
-- **[FA code based on  W3C ]([https://css-tricks.com/snippets/css/a-guide-to-flexbox/])** 
+
 
 ---
 
