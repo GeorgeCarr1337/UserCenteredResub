@@ -1,71 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declares the document as an HTML5 document -->
+<html lang="en"> <!-- Sets the language of the document to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Website</title>
+    <meta charset="UTF-8"> <!-- Defines the character encoding as UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive scaling on mobile devices -->
+    <title>Resume Website</title> <!-- Sets the title of the webpage -->
+    
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
-	<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Add icon library for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+    <!-- Header section containing name, job title, navigation, and profile picture -->
     <header>
         <div class="logo-section">
-            <h1>George Carr</h1>
-            <h2>Computer Science Lecturer</h2>
+            <h1>George Carr</h1> <!-- Displays the name -->
+            <h2>Computer Science Lecturer</h2> <!-- Displays the job title -->
         </div>
+
+        <!-- Navigation menu -->
         <nav class="navigation">
-            <a href="Home.html">Home</a>
-            <a href="Resume.html">Resume</a>
-            <a href="Contact.html" id="current">Contact</a>
+            <a href="Home.html">Home</a> <!-- Link to Home page -->
+            <a href="Resume.html">Resume</a> <!-- Link to Resume page -->
+            <a href="Contact.html" id="current">Contact</a> <!-- Link to Contact page (current page) -->
         </nav>
+
+        <!-- Profile picture section -->
         <div class="picture-section">
             <img src="Images/PigeonProfile.jpg" alt="A Beautiful Green pigeon">
         </div>
     </header>
+
+    <!-- Main content section -->
     <main id="contact">
+
+        <!-- Left section containing personal contact details -->
         <section class="content-left">
-			<h2>Personal Information</h2>
-            <h3>Name</h3>
-            <p>George Carr</p>
-			<h3>Address</h3>
-            <p>25 Carlton Grove, Wrexham, UK</p>
-			<h3>Phone</h3>
-            <p>+44 7557986628</p>
-			<h3>Email</h3>
-            <p>george.carr@cambria.ac.uk</p>
+            <h2>Personal Information</h2> <!-- Section title -->
+
+            <h3>Name</h3> 
+            <p>George Carr</p> <!-- Displays name -->
+
+            <h3>Address</h3>
+            <p>25 Carlton Grove, Wrexham, UK</p> <!-- Displays address -->
+
+            <h3>Phone</h3>
+            <p>+44 7557986628</p> <!-- Displays phone number -->
+
+            <h3>Email</h3>
+            <p>george.carr@cambria.ac.uk</p> <!-- Displays email -->
         </section>
+
+        <!-- Right section containing contact form -->
         <section class="content-right">
-			<!-- Fix formatting later -->		
-              <div class="contact-form">
-				<h2 class="heading">Contact Form</h2>
-				<form id="contact-form" action="mailto:george.carr@cambria.ac.uk" method="POST">
-				  <label for="name">Name:</label>
-				  <input type="text" id="name" name="name" required><br>
+            <!-- Contact form section -->
+            <div class="contact-form">
+                <h2 class="heading">Contact Form</h2> <!-- Form title -->
 
-				  <label for="email">Email:</label>
-				  <input type="text" id="email" name="email" required><br>
+                <!-- Contact form for user input -->
+                <form id="contact-form" action="mailto:george.carr@cambria.ac.uk" method="POST">
+                    <label for="name">Name:</label> <!-- Label for name input -->
+                    <input type="text" id="name" name="name" required><br> <!-- Input field for name -->
 
-				  <label for="message">Message:</label>
-				  <input type="text" id="message" name="message" required><br>
+                    <label for="email">Email:</label> <!-- Label for email input -->
+                    <input type="text" id="email" name="email" required><br> <!-- Input field for email -->
 
-				  <input type="submit" value="Submit">
-				</form>
-  
+                    <label for="message">Message:</label> <!-- Label for message input -->
+                    <input type="text" id="message" name="message" required><br> <!-- Input field for message -->
+
+                    <input type="submit" value="Submit"> <!-- Submit button -->
+                </form>
+            </div>
         </section>
+
     </main>
 
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 George Carr</p>
-	<!-- All fa classes are based on W3C tutorial linked in the stylesheet -->		
+        <p>&copy; 2024 George Carr</p> <!-- Copyright information -->
+
+        <!-- Social media links -->
+        <!-- All 'fa' classes are based on W3C tutorial linked in the stylesheet -->
         <div class="social-media">
             <a href="#">Facebook</a>
-			<a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-facebook"></a> <!-- Facebook icon -->
+            
             <a href="#">Twitter</a>
-			<a href="#" class="fa fa-twitter"></a>
-            <a href="#">LinkedIn</a>			
-			<a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a> <!-- Twitter icon -->
+            
+            <a href="#">LinkedIn</a>
+            <a href="#" class="fa fa-linkedin"></a> <!-- LinkedIn icon -->
         </div>
     </footer>
+
 </body>
 </html>
