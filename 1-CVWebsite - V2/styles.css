@@ -1,251 +1,73 @@
-/* General Styles */
+/* Base styles for the body element */
 body {
-    font-family: Tahoma, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-	background-color: #e6ffe6;
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    background-color: #e8f6e8;
-}
-
-.logo-section {
-    flex: 1;
-    text-align: centre;
-    padding: 10px;
-}
-
-.logo-section h1 {
-    font-size: 28px;
-    color: #cc3300;
-}
-
-.logo-section h2 {
-    font-size: 20px;
-    color: #cc0066;
-}
-
-.navigation {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-	
-	
-}
-
-.navigation a {
-    text-decoration: none;
-	text-align: center;
-	text-align: middle;
-    padding: 10px 20px;
-    color: #008000;
-	width:100px;	
-	height: 30px;
-    background-color: #f0fdf0;
-    border: 2px solid #ffd700;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.navigation a:hover {
-    color: #004d00;
-    background-color: #ffe4b5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#current {
-background-color:#ffd700; 
-}
-
-.picture-section {
-    flex: 1;
-    text-align: right;
-    padding: 2px;
-}
-
-.picture-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-/* Content Sections */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.content-left, .content-right {
-    flex: 1;
-    padding: 20px;
-}
-
-.content-left {
-    background-color: #f9ecf9;
-}
-
-.content-left h2 {
-    font-size: 24px;
-    color: #611f61;
-	font-weight: 800;
-}
-
-.content-left h3 {
-    font-size: 20px;
-    color: #611f61;
-	font-weight: 600;
-}
-.content-left p {
-	font-size: 1rem;
-	margin-bottom: 15px;
-	line-height: 1.8;
-    color: #000000;
-}
-
-.content-right {
-    background-color: #ffffff;
-}
-
-
-.content-right h2 {
-    font-size: 24px;
-    color: #006600;
-	font-weight: 800;
-}
-
-.content-right h3 {
-    font-size: 20px;
-    color: #006600;
-	font-weight: 600;
-}
-
-.content-right p {
-	font-size: 1rem;
-	margin-bottom: 15px;
-	line-height: 1.8;
-    color: #000000;
-}
-
-.content-full {
-    background-color: #f9ecf9;
-	display: block;
-	width: 100%;
-	padding: 20px;
-}
-
-.content-full h2 {
-    font-size: 24px;
-    color: #611f61;
-	font-weight: 800;
-}
-
-.content-full h3 {
-    font-size: 20px;
-    color: #611f61;
-	font-weight: 600;
-}
-.content-full p {
-	font-size: 1rem;
-	margin-bottom: 15px;
-	line-height: 1.8;
-    color: #000000;
-}
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin: 0; /* Removes all gaps around the body */
+  padding: 0;
   box-sizing: border-box;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #ffe4b5;
-  color: black;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: 1p;
-  border-radius: 4px;
-  cursor: pointer;
+/* Sidebar and content areas */
+.sidebar {
+  grid-area: sidebar; /* Assigns this element to the 'sidebar' grid area */
 }
 
-input[type=submit]:hover {
-  background-color: #DAA520;
+.content {
+  grid-area: content; /* Assigns this element to the 'content' grid area */
 }
 
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #006400;
-    color: white;
+/* Header and footer areas */
+.header {
+  grid-area: header; /* Assigns this element to the 'header' grid area */
 }
 
-footer .social-media a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+.footer {
+  grid-area: footer; /* Assigns this element to the 'footer' grid area */
 }
 
-footer .social-media a:hover {
-    color: #ffd700;
+/* Wrapper container styles */
+.wrapper {
+  display: grid; /* Defines a grid container */
+  grid-gap: 1em; /* Adds spacing between grid items */
+  background-color: #fff; /* Sets the background color of the wrapper to white */
+  color: #444; /* Sets the text color to a dark gray */
+
+  /* Default layout: single column for small screens */
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "footer";
 }
 
-/* All fa code below is adapted from W3C https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
-.fa {
-  padding: 10px;
-  font-size: 40px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+/* Two-column layout for medium and larger screens */
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 20% auto; /* Defines a 2-column layout */
+    grid-template-areas:
+      "header   header"
+      "sidebar  content"
+      "footer   footer";
+  }
 }
 
-.fa:hover {
-    opacity: 0.7;
+/* Larger layout adjustments (optional max-width for larger screens) */
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    grid-gap: 20px; /* Adds more spacing between grid items */
+    max-width: 800px; /* Restricts the maximum width of the layout */
+  }
 }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+/* Styling for box elements */
+.box {
+  background-color: #444; /* Sets a dark background color */
+  color: #fff; /* Sets the text color to white */
+  border-radius: 5px; /* Rounds the corners */
+  padding: 10px; /* Adds inner spacing */
+  font-size: 150%; /* Increases the font size by 1.5 times */
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    .navigation {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    main {
-        flex-direction: column;
-    }
+/* Additional styles for header and footer elements */
+.header,
+.footer {
+  background-color: #999; /* Sets a light gray background color */
 }
