@@ -39,21 +39,23 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 ---
 
 ## 🛠️ Technologies Used  
+- **All fa code below is adapted from W3C** https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
 - **HTML5** – Markup for structuring the website.  
 - **CSS3** – Styling with modern font usage and hover effects.  
 - **Responsive Design** – Mobile-friendly layout using **flexbox** and **media queries**.
 - **Template based on** -Code-Institute-Org/ci-full-template.
-- **All fa code below is adapted from W3C** https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
+
 
 ---
 
 ## 🔮 Possible Future Improvements  
+🔹 **More detail about myself and history across the site.  
 🔹 **Dark Mode Toggle** – Add a theme switcher for better UX.  
 🔹 **Multilingual Support** – Enable multiple language options.  
 🔹 **Interactive Timeline** – Improve the resume page with an animated job timeline.  
 🔹 **Social Media Integration** – Display live social media feeds.  
 🔹 **Testimonials Section** – Add client or employer testimonials.  
-🔹 **More detail about myself and history across the site.  
+
 ---
 
 ## 🔗 References & Attributions  
@@ -61,7 +63,7 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 - **[HTML & CSS Guidelines - W3C](https://www.w3.org/)** – Ensured web accessibility and semantic structure.  
 - **[Responsive Web Design - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)** – Implemented best practices for responsiveness.  
 - **[CSS Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)** – Used flexbox for layout alignment.
-- **This is based on 
+- **[FA code based on  W3C ]([https://css-tricks.com/snippets/css/a-guide-to-flexbox/])** 
 
 ---
 
