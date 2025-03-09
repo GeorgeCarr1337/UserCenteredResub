@@ -1,73 +1,227 @@
 /* Base styles for the body element */
 body {
+  font-family: Tahoma, Verdana, sans-serif; /* Sets a clean, sans-serif font */
   margin: 0; /* Removes all gaps around the body */
   padding: 0;
-  box-sizing: border-box;
+  background-color: #e6ffe6; /* Light green background color */
 }
 
-/* Sidebar and content areas */
-.sidebar {
-  grid-area: sidebar; /* Assigns this element to the 'sidebar' grid area */
+/* Header styles */
+header {
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Distributes elements evenly */
+  padding: 40px; /* Adds spacing inside the header */
+  background-color: #e8f6e8; /* Light greenish background */
 }
 
-.content {
-  grid-area: content; /* Assigns this element to the 'content' grid area */
+/* Logo section inside the header */
+.logo-section {
+  flex: 1; /* Allows flexible growth */
+  text-align: center; /* Center aligns text */
+  padding: 10px;
 }
 
-/* Header and footer areas */
-.header {
-  grid-area: header; /* Assigns this element to the 'header' grid area */
+.logo-section h1 {
+  font-size: 28px; /* Increases heading size */
+  color: #cc3300; /* Dark reddish color */
 }
 
-.footer {
-  grid-area: footer; /* Assigns this element to the 'footer' grid area */
+.logo-section h2 {
+  font-size: 20px;
+  color: #cc0066; /* Dark pinkish color */
 }
 
-/* Wrapper container styles */
-.wrapper {
-  display: grid; /* Defines a grid container */
-  grid-gap: 1em; /* Adds spacing between grid items */
-  background-color: #fff; /* Sets the background color of the wrapper to white */
-  color: #444; /* Sets the text color to a dark gray */
-
-  /* Default layout: single column for small screens */
-  grid-template-areas:
-    "header"
-    "sidebar"
-    "content"
-    "footer";
+/* Navigation bar styles */
+.navigation {
+  flex: 1; /* Makes navigation flexible */
+  display: flex;
+  justify-content: space-around; /* Evenly distributes links */
+  padding: 10px;
 }
 
-/* Two-column layout for medium and larger screens */
-@media only screen and (min-width: 500px) {
-  .wrapper {
-    grid-template-columns: 20% auto; /* Defines a 2-column layout */
-    grid-template-areas:
-      "header   header"
-      "sidebar  content"
-      "footer   footer";
+.navigation a {
+  text-decoration: none; /* Removes underline from links */
+  text-align: center;
+  padding: 10px 20px;
+  color: #008000; /* Green text color */
+  width: 100px; 
+  height: 30px;
+  background-color: #f0fdf0; /* Light green background */
+  border: 2px solid #ffd700; /* Gold border */
+  border-radius: 10px; /* Rounds edges */
+  font-weight: bold;
+  transition: 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for navigation links */
+.navigation a:hover {
+  color: #004d00; /* Darker green */
+  background-color: #ffe4b5; /* Light yellow background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+}
+
+/* Highlights the current page link */
+#current {
+  background-color: #ffd700; /* Gold background */
+}
+
+/* Profile picture section */
+.picture-section {
+  flex: 1;
+  text-align: right; /* Aligns image to the right */
+  padding: 2px;
+}
+
+.picture-section img {
+  max-width: 100%; /* Makes image responsive */
+  height: auto;
+  border-radius: 50%; /* Makes it circular */
+}
+
+/* Content sections */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.content-left, .content-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.content-left {
+  background-color: #f9ecf9; /* Light pinkish background */
+}
+
+.content-left h2, .content-left h3 {
+  font-size: 24px;
+  color: #611f61; /* Dark purple */
+  font-weight: 800;
+}
+
+.content-left p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #000000;
+}
+
+.content-right {
+  background-color: #ffffff; /* White background */
+}
+
+.content-right h2, .content-right h3 {
+  font-size: 24px;
+  color: #006600; /* Dark green */
+  font-weight: 800;
+}
+
+.content-right p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #000000;
+}
+
+/* Full-width content section */
+.content-full {
+  background-color: #f9ecf9;
+  display: block;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Input fields styling */
+input[type=text], select {
+  width: 100%; /* Full width */
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Submit button styling */
+input[type=submit] {
+  width: 100%;
+  background-color: #ffe4b5;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+  background-color: #DAA520; /* Golden yellow */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #006400; /* Dark green */
+  color: white;
+}
+
+/* Social media link styles */
+footer .social-media a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-media a:hover {
+  color: #ffd700; /* Gold on hover */
+}
+
+/* Social media icons (adapted from W3C tutorial) */
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Specific styles for social media icons */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
   }
-}
 
-/* Larger layout adjustments (optional max-width for larger screens) */
-@media only screen and (min-width: 600px) {
-  .wrapper {
-    grid-gap: 20px; /* Adds more spacing between grid items */
-    max-width: 800px; /* Restricts the maximum width of the layout */
+  .navigation {
+      flex-direction: column;
+      text-align: center;
   }
-}
 
-/* Styling for box elements */
-.box {
-  background-color: #444; /* Sets a dark background color */
-  color: #fff; /* Sets the text color to white */
-  border-radius: 5px; /* Rounds the corners */
-  padding: 10px; /* Adds inner spacing */
-  font-size: 150%; /* Increases the font size by 1.5 times */
-}
-
-/* Additional styles for header and footer elements */
-.header,
-.footer {
-  background-color: #999; /* Sets a light gray background color */
+  main {
+      flex-direction: column;
+  }
 }
