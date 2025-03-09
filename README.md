@@ -41,7 +41,8 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 ## 🛠️ Technologies Used  
 - **HTML5** – Markup for structuring the website.  
 - **CSS3** – Styling with modern font usage and hover effects.  
-- **Responsive Design** – Mobile-friendly layout using **flexbox** and **media queries**.  
+- **Responsive Design** – Mobile-friendly layout using **flexbox** and **media queries**.
+- **Template based on** -Code-Institute-Org/ci-full-template 
 
 ---
 
@@ -67,7 +68,7 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/resume-website.git
+   git clone https://github.com/GeorgeCarr1337e/UserCenteredResub.git
 
 
 
