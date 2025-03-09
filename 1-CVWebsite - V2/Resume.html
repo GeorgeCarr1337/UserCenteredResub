@@ -1,54 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declares this document as an HTML5 document -->
+<html lang="en"> <!-- Sets the language of the document to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Website</title>
+    <meta charset="UTF-8"> <!-- Defines character encoding as UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on mobile devices -->
+    <title>Resume Website</title> <!-- Sets the title of the webpage -->
+
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
-	<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add FontAwesome icon library for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+    <!-- Header section containing name, job title, navigation menu, and profile picture -->
     <header>
         <div class="logo-section">
-            <h1>George Carr</h1>
-            <h2>Computer Science Lecturer</h2>
+            <h1>George Carr</h1> <!-- Displays the name -->
+            <h2>Computer Science Lecturer</h2> <!-- Displays the job title -->
         </div>
+
+        <!-- Navigation menu -->
         <nav class="navigation">
-            <a href="Home.html">Home</a>
-            <a href="Resume.html"id="current">Resume</a>
-            <a href="Contact.html">Contact</a>
+            <a href="Home.html">Home</a> <!-- Link to Home page -->
+            <a href="Resume.html" id="current">Resume</a> <!-- Link to Resume page (current page) -->
+            <a href="Contact.html">Contact</a> <!-- Link to Contact page -->
         </nav>
+
+        <!-- Profile picture section -->
         <div class="picture-section">
-            <img src="Images/PigeonProfile.jpg" alt="A Beautiful Green pigeon">
+            <img src="Images/PigeonProfile.jpg" alt="A Beautiful Green pigeon"> <!-- Profile image -->
         </div>
     </header>
+
+    <!-- Main content section -->
     <main id="home">
+
+        <!-- Left section containing academic qualifications -->
         <section class="content-left">
-            <h2>Qualifications</h2>
-            <p><strong>2022-2023:</strong> PGCE In Higher Education</p>
-			<p><strong>2018-2021:</strong> MSc Learning Technology</p>
-			<p><strong>2007-2010:</strong> BSc Computing</p>
+            <h2>Qualifications</h2> <!-- Section title -->
+
+            <p><strong>2022-2023:</strong> PGCE In Higher Education</p> <!-- Recent qualification -->
+            <p><strong>2018-2021:</strong> MSc Learning Technology</p> <!-- Master's degree -->
+            <p><strong>2007-2010:</strong> BSc Computing</p> <!-- Bachelor's degree -->
         </section>
+
+        <!-- Right section containing programming and other skills -->
         <section class="content-right">
-            <h2>Computer Language Skills</h2>
-            <p>C#, Python, VB.net, SQL, HTML, CSS, Javascript</p>
-			<h2>Other Domains</h2>
-            <p>Data Analysis, Design, Statistics, Research</p>
+            <h2>Computer Language Skills</h2> <!-- Section title -->
+            <p>C#, Python, VB.net, SQL, HTML, CSS, JavaScript</p> <!-- List of programming languages -->
+
+            <h2>Other Domains</h2> <!-- Additional skills -->
+            <p>Data Analysis, Design, Statistics, Research</p> <!-- Relevant expertise -->
         </section>
     </main>
 
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 George Carr</p>
-	<!-- All fa classes are based on W3C tutorial linked in the stylesheet -->		
+        <p>&copy; 2024 George Carr</p> <!-- Copyright information -->
+
+        <!-- Social media links -->
+        <!-- All 'fa' classes are based on W3C tutorial linked in the stylesheet -->
         <div class="social-media">
             <a href="#">Facebook</a>
-			<a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-facebook"></a> <!-- Facebook icon -->
+
             <a href="#">Twitter</a>
-			<a href="#" class="fa fa-twitter"></a>
-            <a href="#">LinkedIn</a>			
-			<a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a> <!-- Twitter icon -->
+
+            <a href="#">LinkedIn</a>
+            <a href="#" class="fa fa-linkedin"></a> <!-- LinkedIn icon -->
         </div>
     </footer>
+
 </body>
-</html>
