@@ -86,9 +86,9 @@ Pigeon Image:
 ---
 
 ## 📐 Wireframes  
-To see wireframe designs, visit **"Design screens for George Carr - Portfolio WebsiteV2"**.  
+To see wireframe designs, visit **"Documents - Design screens for George Carr - Portfolio WebsiteV2"**.  
 
 ---
 
 ## 🛠️ User and Functional Testing  
-To see the testing documentation, visit **"Resume website - Testing and User Stories"**.  
+To see the testing documentation, visit **"Documents - Resume website - Testing and User Stories"**.  
