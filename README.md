@@ -68,7 +68,7 @@ Validators:
 - [HTML Validator](https://validator.w3.org/)  
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-- Pigeon Image:
+Pigeon Image:
 - [Kererū - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Kereru_profile.jpg/220px-Kereru_profile.jpg)
 
 ---
