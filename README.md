@@ -1,7 +1,7 @@
 # Resume Website  
 
 ## 📌 Project Overview  
-This is a **fully responsive** personal resume website built using **HTML & CSS**. It features interactive navigation and responsivness, structured content sections, and a download button for a CV.  
+This is a **fully responsive** personal resume website built using **HTML & CSS**. It features interactive navigation and responsiveness, structured content sections, and a download button for a CV.  
 
 The website consists of **five pages**:  
 - **Home** 🏠 – Displays personal info and an "About Me" section.  
@@ -41,9 +41,8 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 ## 🛠️ Technologies Used  
 - **HTML5** – Markup for structuring the website.  
 - **CSS3** – Styling with modern font usage and hover effects.  
-- **Responsive Design** – Mobile-friendly layout using **flexbox** and **media queries**.
-- **Template based on** -Code-Institute-Org/ci-full-template.
-
+- **Responsive Design** – Mobile-friendly layout using **flexbox** and **media queries**.  
+- **Template based on** -Code-Institute-Org/ci-full-template.  
 
 ---
 
@@ -58,11 +57,16 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 ---
 
 ## 🔗 References & Attributions  
-- **[FA code based on  W3C ](https://www.w3schools.com/howto/howto_css_social_media_buttons.asp)** 
+Most references are from previous websites I've created myself for learner projects. I have used the specific links below for this website:
+
+- **[FA code based on  W3C ](https://www.w3schools.com/howto/howto_css_social_media_buttons.asp)**  
 - **[HTML & CSS Guidelines - W3C](https://www.w3.org/)** – Ensured web accessibility and semantic structure.  
 - **[Responsive Web Design - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)** – Implemented best practices for responsiveness.  
-- **[CSS Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)** – Used flexbox for layout alignment.
+- **[CSS Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)** – Used flexbox for layout alignment.  
 
+Validators:  
+- [HTML Validator](https://validator.w3.org/)  
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)  
 
 ---
 
@@ -71,7 +75,17 @@ The **header** contains a **logo section, navigation bar, and an image**, with r
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/GeorgeCarr1337e/UserCenteredResub.git
+   ```
 
+2. **Visit the website**  
+   [https://georgecarr1337.github.io/UserCenteredResub/](https://georgecarr1337.github.io/UserCenteredResub/)  
 
+---
 
+## 📐 Wireframes  
+To see wireframe designs, visit **"Design screens for George Carr - Portfolio WebsiteV2"**.  
 
+---
+
+## 🛠️ User and Functional Testing  
+To see the testing documentation, visit **"Resume website - Testing and User Stories"**.  
