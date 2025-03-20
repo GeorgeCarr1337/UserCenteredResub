@@ -91,4 +91,8 @@ To see wireframe designs, visit **"Documents - Design screens for George Carr - 
 ---
 
 ## 🛠️ User and Functional Testing  
-To see the testing documentation, visit **"Documents - Resume website - Testing and User Stories"**.  
+To see the testing documentation, visit **"Documents - Resume website - Testing and User Stories"**. 
+
+## 🛠️ Current Bug
+I can't make the image load from a subfolder. I've tried relative and absolute linking. I've also tried linking to GitHubs raw file with no luck
+I've moved the image into the parent folder for now.
