@@ -94,4 +94,4 @@ To see wireframe designs, visit **"Documents - Design screens for George Carr - 
 To see the testing documentation, visit **"Documents - Resume website - Testing and User Stories"**. 
 
 ## 🛠️ Current Bug testing
-I had tried for over an hour to link to an image in the subfolder. I tried several address types including linking to the raw file. It seems to have worked now eventually with standard addressing. My guess is that it was a possibel cahce issue.
+I had tried for over an hour to link to an image in the subfolder. I tried several address types including linking to the raw file. It seems to have worked now eventually with standard addressing. My guess is that it was a possibel cache issue.
